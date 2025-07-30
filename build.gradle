@@ -19,6 +19,22 @@ dependencies {
     compileOnly 'ga.strikepractice:strikepractice-api' // Резервный вариант
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+// Исправление ошибки с дублированием файлов
+tasks.named('processResources') {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
