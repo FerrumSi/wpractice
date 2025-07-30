@@ -1,0 +1,53 @@
+menu:
+  title: '<black>Сражения пати'
+  item:
+    types:
+      'Пати': SOUL_CAMPFIRE
+      'Пати в бою': CAMPFIRE
+    displayname: '<white>Пати %strikepractice_elo_rank% <gray>(%leader%)'
+    lore:
+      - '<white>'
+      - '[players]'
+      - '<white>'
+      - '%party_status_message%'
+      - '<white>'
+    click:
+      command: 'partyfight %leader%'
+    custom-model-data: 0
+  info:
+    type: FLOWER_BANNER_PATTERN
+    displayname: '<gradient:#009D9D:#00EAEA>Информация</gradient>'
+    lore:
+      - '<white>'
+      - '<white> Здесь Вы можете выбрать пати,'
+      - '<white> которую хотите вызвать на дуэль.'
+      - '<white>'
+      - '<white> Вызвать пати на дуэль командой:'
+      - '<#009D9D> /partyfight (Лидер)'
+    slot: 4
+    custom-model-data: 0
+  split-party:
+    type: CROSSBOW
+    displayname: '<green>Разделить пати'
+    lore:
+      - '<gray>Нажмите, чтобы разделить вашу пати'
+      - '<gray>Команда: /party split <Набор>'
+    slot: 49
+    custom-model-data: 0
+  next-page:
+    type: ARROW
+    displayname: '<green>Следующая страница'
+    lore:
+      - '<gray>Перейти на следующую страницу'
+    slot: 53
+    custom-model-data: 0
+  prev-page:
+    type: ARROW
+    displayname: '<green>Предыдущая страница'
+    lore:
+      - '<gray>Перейти на предыдущую страницу'
+    slot: 45
+    custom-model-data: 0
+slots:
+  - 10-16
+default_kit: classic

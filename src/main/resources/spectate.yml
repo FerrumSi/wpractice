@@ -1,0 +1,73 @@
+menu:
+  title: '<black>Наблюдение за сражениями'
+  item:
+    types:
+      'Рейтинговая Дуэль': YELLOW_CONCRETE
+      'Нерейтинговая Дуэль': LIGHT_GRAY_CONCRETE
+      'Нерейтинговая party-vs-party': BLUE_CONCRETE
+      'Нерейтинговая party-split': CYAN_CONCRETE
+      'Нерейтинговая party-ffa': LIME_CONCRETE
+      'Нерейтинговая ffa': GREEN_CONCRETE
+    displayname: '{fight_type}'
+    lore:
+      - '<white>'
+      - '[players]'
+      - '<white>'
+      - '<white> Набор<dark_gray>: <#a2a2a2>{kit}'
+      - '<white> Арена<dark_gray>: <#a2a2a2>{arena}'
+      - '<white> Время<dark_gray>: <#a2a2a2>{duration}'
+      - '<white>'
+      - '<white> Нажмите, чтобы начать наблюдение.'
+      - '<white>'
+    click:
+      command: 'spectate {player}'
+    custom-model-data: 0
+  info:
+    type: FLOWER_BANNER_PATTERN
+    displayname: '<gradient:#009D9D:#00EAEA>Информация</gradient>'
+    lore:
+      - '<white>'
+      - '<white> Здесь Вы можете выбрать бой, '
+      - '<white> за которым хотите наблюдать.'
+      - '<white>'
+      - '<white> Начать наблюдение командой:'
+      - '<#009D9D> /spectate (Игрок)'
+    slot: 4
+    custom-model-data: 0
+  sort:
+    type: COMPASS
+    displayname: '<green>Фильтр: %sort_mode%'
+    lore:
+      - '<gray>Нажмите, чтобы выбрать тип боя'
+      - '<gray>Текущий: %sort_mode%'
+    slot: 49
+    custom-model-data: 0
+  next-page:
+    type: ARROW
+    displayname: '<green>Следующая страница'
+    lore:
+      - '<gray>Перейти на следующую страницу'
+    slot: 53
+    custom-model-data: 0
+  prev-page:
+    type: ARROW
+    displayname: '<green>Предыдущая страница'
+    lore:
+      - '<gray>Перейти на предыдущую страницу'
+    slot: 45
+    custom-model-data: 0
+fight_types:
+  'Рейтинговая Дуэль': '<blue>Рейтинговая Дуэль'
+  'Нерейтинговая Дуэль': '<blue>Дуэль'
+  'Нерейтинговая party-vs-party': '<blue>Party-vs-Party'
+  'Нерейтинговая party-split': '<blue>Party-Split'
+  'Нерейтинговая party-ffa': '<blue>Party-FFA'
+  'Нерейтинговая ffa': '<blue>FFA'
+  'Нерейтинговая Неизвестный бой': '<red>Неизвестный бой'
+sort_priority:
+  - 'Рейтинговая Дуэль'
+  - 'Нерейтинговая Дуэль'
+  - 'Нерейтинговая party-vs-party'
+  - 'Нерейтинговая party-split'
+slots:
+  - 10-16

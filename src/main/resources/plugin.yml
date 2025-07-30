@@ -1,0 +1,31 @@
+name: WPractice
+version: 1.0
+main: com.example.wpractice.WPracticePlugin
+api-version: 1.13
+depend: [StrikePractice]
+softdepend: [PlaceholderAPI]
+commands:
+  wpractice:
+    description: Основная команда плагина WPractice
+    usage: /<command> [fightmenu|spectate|partyfight|reload]
+    permission: wpractice.use
+  party:
+    description: Команда для управления пати, включая Party Split
+    usage: /<command> split <Набор>
+    aliases: [psplit]
+    permission: wpractice.party
+  partyfight:
+    description: Команда для вызова другой пати на бой
+    usage: /<command> <Лидер> [Набор]
+    aliases: [pfight]
+    permission: wpractice.partyfight
+permissions:
+  wpractice.use:
+    description: Доступ к основной команде WPractice
+    default: true
+  wpractice.party:
+    description: Доступ к управлению пати
+    default: true
+  wpractice.partyfight:
+    description: Доступ к вызову пати на бой
+    default: true

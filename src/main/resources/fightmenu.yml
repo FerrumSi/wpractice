@@ -1,0 +1,53 @@
+menu:
+  title: '<black>Создать сражение'
+  item:
+    type: CAMPFIRE
+    displayname: '<white>%strikepractice_elo_rank% <gray>%player%'
+    lore:
+      - '<white>'
+      - '<white> Рейтинг<dark_gray>: <#ca7f12>%strikepractice_global_elo% '
+      - '<white> Убийств<dark_gray>: <#a2a2a2>%strikepractice_kills% '
+      - '<white> Смертей<dark_gray>: <#fcfcfc>%strikepractice_deaths% '
+      - '<white>'
+      - '<white> Нажмите, чтобы вызвать на дуэль.'
+      - '<white>'
+    click:
+      command: 'fight %player%'
+    custom-model-data: 0
+  info:
+    type: MOJANG_BANNER_PATTERN
+    displayname: '<gradient:#F59247:gold>Информация</gradient>'
+    lore:
+      - '<white>'
+      - '<white> Здесь Вы можете выбрать игрока,'
+      - '<white> которого можно вызвать на дуэль.'
+      - '<white>'
+      - '<white> Вызвать игрока на дуэль командой:'
+      - '<#F59247> /duel (Игрок)'
+    slot: 4
+    custom-model-data: 0
+  sort:
+    type: COMPASS
+    displayname: '<green>Сортировка: %sort_mode%'
+    lore:
+      - '<gray>Нажмите, чтобы сменить сортировку'
+      - '<gray>Доступно: Расстояние, ELO, Алфавит'
+    slot: 49
+    custom-model-data: 0
+  next-page:
+    type: ARROW
+    displayname: '<green>Следующая страница'
+    lore:
+      - '<gray>Перейти на следующую страницу'
+    slot: 53
+    custom-model-data: 0
+  prev-page:
+    type: ARROW
+    displayname: '<green>Предыдущая страница'
+    lore:
+      - '<gray>Перейти на предыдущую страницу'
+    slot: 45
+    custom-model-data: 0
+slots:
+  - 10-16
+max-distance: 100.0
